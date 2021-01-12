@@ -2,6 +2,11 @@ Clickjacking PoC
 ====
 A tool made to make your clickjacking pocs better and easy.
 
+
+Updated
+====
+Now catches the creds on the server logs and added message which asks for a cute bounty!
+
 Overview
 =====
 A web based ClickJacking PoC Tool.

